@@ -92,6 +92,7 @@ pip install -r requirements.txt
 
 # Run the notebook
 jupyter notebook final_project_taxi.ipynb
+```
 
 ## 🛠️ Technologies and Libraries
 - **Language:** Python 3.10  
