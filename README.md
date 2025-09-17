@@ -1,4 +1,5 @@
 # Taxi Congestion and Cost Predictions using Machine Learning
+*(NOTE: I am in the process of moving this to a functional site, demonstrating the project and allowing users to insert their own pickup and drop-off locations, and comparing them to any real-world example of taxi costs for specific or similar trips.)*
 
 ## 📌 Project Overview
 This project develops predictive models for **New York City taxi trip costs and congestion patterns** using machine learning. Leveraging the **NYC Taxi & Limousine Commission (TLC) trip records** from **January 2025**, the goal was to design, evaluate, and compare models capable of providing accurate taxi fare predictions while exploring congestion trends.  
