@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NYC Taxi Fare Predictor (MVP)</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <h1>NYC Taxi Fare Predictor</h1>
+
+    <form id="fareForm" class="card">
+      <div class="grid">
+        <label>Passengers
+          <input name="passenger_count" type="number" min="1" max="6" required>
+        </label>
+        <label>Trip distance (mi)
+          <input name="trip_distance" type="number" step="0.01" min="0" required>
+        </label>
+        <label>Pickup hour (0–23)
+          <input name="pickup_hour" type="number" min="0" max="23" required>
+        </label>
+        <label>Day of week (0=Mon)
+          <input name="pickup_dow" type="number" min="0" max="6" required>
+        </label>
+        <label>Pickup lat
+          <input name="pickup_lat" type="number" step="0.000001" required>
+        </label>
+        <label>Pickup lng
+          <input name="pickup_lng" type="number" step="0.000001" required>
+        </label>
+        <label>Dropoff lat
+          <input name="dropoff_lat" type="number" step="0.000001" required>
+        </label>
+        <label>Dropoff lng
+          <input name="dropoff_lng" type="number" step="0.000001" required>
+        </label>
+      </div>
+      <button type="submit">Predict</button>
+    </form>
+
+    <section id="result" class="result" aria-live="polite"></section>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
